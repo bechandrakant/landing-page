@@ -1,0 +1,90 @@
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: aquamarine;
+    }
+
+    .container {
+      box-sizing: border-box;
+      padding: 10%;
+      text-align: justify;
+    }
+
+    section {
+      padding-top: 50px;
+    }
+
+    @media (max-width: 500px) {
+      section {
+        padding-top: 90px;
+      }
+    }
+
+    nav {
+      position: fixed;
+      top: 0px;
+      width: 100%;
+      min-height: 50px;
+      background-color: brown;
+      border-bottom: 1px solid darkturquoise;
+      z-index: 1;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    p {
+      text-align: justify;
+    }
+
+    nav ul {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: auto;
+    }
+
+    @media (max-width: 500px) {
+      nav ul {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 40px;
+      }
+    }
+
+    nav ul li {
+      list-style-type: none;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      text-transform: uppercase;
+      color: white;
+      padding: 10px;
+    }
+/** style on scroll **/
+.nav-container.scroll {
+  background: brown;
+}
+.nav-container.scroll a {
+  color: #fff;
+}
+
+/** active navigation **/
+.nav-container.scroll a.active {
+  color: #000;
+  border: 2px solid peru;
+  background-color: greenyellow;
+}
+.nav-container a.active {
+  color: #000;
+  border: 2px solid peru;
+  background-color: greenyellow;
+}
+
+footer {
+  text-align: center;
+  min-height: 300px;
+  color: white;
+  padding: 30px;
+  background-color: peru;
+}
